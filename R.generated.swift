@@ -139,8 +139,10 @@ struct R: Rswift.Validatable {
     fileprivate init() {}
   }
 
-  /// This `R.file` struct is generated, and contains static references to 19 files.
+  /// This `R.file` struct is generated, and contains static references to 20 files.
   struct file {
+    /// Resource file `README.md`.
+    static let readmeMd = Rswift.FileResource(bundle: R.hostingBundle, name: "README", pathExtension: "md")
     /// Resource file `book@2x.png`.
     static let book2xPng = Rswift.FileResource(bundle: R.hostingBundle, name: "book@2x", pathExtension: "png")
     /// Resource file `defaultAvatar@2x.jpg`.
@@ -179,6 +181,12 @@ struct R: Rswift.Validatable {
     static let mine_selected2xPng = Rswift.FileResource(bundle: R.hostingBundle, name: "mine_selected@2x", pathExtension: "png")
     /// Resource file `student@2x.png`.
     static let student2xPng = Rswift.FileResource(bundle: R.hostingBundle, name: "student@2x", pathExtension: "png")
+
+    /// `bundle.url(forResource: "README", withExtension: "md")`
+    static func readmeMd(_: Void = ()) -> Foundation.URL? {
+      let fileResource = R.file.readmeMd
+      return fileResource.bundle.url(forResource: fileResource)
+    }
 
     /// `bundle.url(forResource: "book@2x", withExtension: "png")`
     static func book2xPng(_: Void = ()) -> Foundation.URL? {
@@ -554,7 +562,7 @@ struct _R: Rswift.Validatable {
 
     #if os(iOS) || os(tvOS)
     struct main: Rswift.StoryboardResourceWithInitialControllerType, Rswift.Validatable {
-      typealias InitialController = ViewController
+      typealias InitialController = UIKit.UINavigationController
 
       let bundle = R.hostingBundle
       let name = "Main"

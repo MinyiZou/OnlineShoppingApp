@@ -32,6 +32,9 @@
 		5218C9A22AB069CA00DEFFC5 /* FakeData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5218C9A12AB069CA00DEFFC5 /* FakeData.swift */; };
 		5218C9A52AB06BA600DEFFC5 /* UIColor+HexAndImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5218C9A42AB06BA600DEFFC5 /* UIColor+HexAndImage.swift */; };
 		5218C9A72AB06DE200DEFFC5 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 5218C9A62AB06DE200DEFFC5 /* README.md */; };
+		5218C9A92AB070FF00DEFFC5 /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5218C9A82AB070FF00DEFFC5 /* BaseViewController.swift */; };
+		5218C9AE2AB0741E00DEFFC5 /* UIColor+AppColors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5218C9AD2AB0741E00DEFFC5 /* UIColor+AppColors.swift */; };
+		5218C9B12AB0756D00DEFFC5 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5218C9B02AB0756D00DEFFC5 /* LoginViewController.swift */; };
 		525CFC6D2AAFA1E100FE3E22 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 525CFC6C2AAFA1E100FE3E22 /* AppDelegate.swift */; };
 		525CFC6F2AAFA1E100FE3E22 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 525CFC6E2AAFA1E100FE3E22 /* SceneDelegate.swift */; };
 		525CFC712AAFA1E100FE3E22 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 525CFC702AAFA1E100FE3E22 /* ViewController.swift */; };
@@ -69,6 +72,9 @@
 		5218C9A12AB069CA00DEFFC5 /* FakeData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FakeData.swift; sourceTree = "<group>"; };
 		5218C9A42AB06BA600DEFFC5 /* UIColor+HexAndImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+HexAndImage.swift"; sourceTree = "<group>"; };
 		5218C9A62AB06DE200DEFFC5 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = SOURCE_ROOT; };
+		5218C9A82AB070FF00DEFFC5 /* BaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
+		5218C9AD2AB0741E00DEFFC5 /* UIColor+AppColors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+AppColors.swift"; sourceTree = "<group>"; };
+		5218C9B02AB0756D00DEFFC5 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		525CFC692AAFA1E100FE3E22 /* MallApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MallApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		525CFC6C2AAFA1E100FE3E22 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		525CFC6E2AAFA1E100FE3E22 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -132,8 +138,17 @@
 			isa = PBXGroup;
 			children = (
 				5218C9A42AB06BA600DEFFC5 /* UIColor+HexAndImage.swift */,
+				5218C9AD2AB0741E00DEFFC5 /* UIColor+AppColors.swift */,
 			);
 			path = Extensions;
+			sourceTree = "<group>";
+		};
+		5218C9AF2AB0751A00DEFFC5 /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				5218C9B02AB0756D00DEFFC5 /* LoginViewController.swift */,
+			);
+			path = Login;
 			sourceTree = "<group>";
 		};
 		525CFC602AAFA1E100FE3E22 = {
@@ -169,6 +184,8 @@
 				525CFC752AAFA1E700FE3E22 /* Assets.xcassets */,
 				525CFC772AAFA1E700FE3E22 /* LaunchScreen.storyboard */,
 				525CFC7A2AAFA1E700FE3E22 /* Info.plist */,
+				5218C9AF2AB0751A00DEFFC5 /* Login */,
+				5218C9A82AB070FF00DEFFC5 /* BaseViewController.swift */,
 			);
 			path = MallApp;
 			sourceTree = "<group>";
@@ -348,13 +365,16 @@
 			buildActionMask = 2147483647;
 			files = (
 				525CFC712AAFA1E100FE3E22 /* ViewController.swift in Sources */,
+				5218C9AE2AB0741E00DEFFC5 /* UIColor+AppColors.swift in Sources */,
 				525CFC6D2AAFA1E100FE3E22 /* AppDelegate.swift in Sources */,
 				5218C99E2AB068E400DEFFC5 /* Product.swift in Sources */,
 				5218C9A52AB06BA600DEFFC5 /* UIColor+HexAndImage.swift in Sources */,
 				5218C9A02AB0697A00DEFFC5 /* Deal.swift in Sources */,
+				5218C9A92AB070FF00DEFFC5 /* BaseViewController.swift in Sources */,
 				525CFC6F2AAFA1E100FE3E22 /* SceneDelegate.swift in Sources */,
 				5218C99B2AB066BC00DEFFC5 /* R.generated.swift in Sources */,
 				5218C9A22AB069CA00DEFFC5 /* FakeData.swift in Sources */,
+				5218C9B12AB0756D00DEFFC5 /* LoginViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
