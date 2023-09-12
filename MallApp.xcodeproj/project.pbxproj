@@ -30,7 +30,7 @@
 		5218C99E2AB068E400DEFFC5 /* Product.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5218C99D2AB068E400DEFFC5 /* Product.swift */; };
 		5218C9A02AB0697A00DEFFC5 /* Deal.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5218C99F2AB0697A00DEFFC5 /* Deal.swift */; };
 		5218C9A22AB069CA00DEFFC5 /* FakeData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5218C9A12AB069CA00DEFFC5 /* FakeData.swift */; };
-		5218C9A52AB06BA600DEFFC5 /* UIColor+ HexAndImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5218C9A42AB06BA600DEFFC5 /* UIColor+ HexAndImage.swift */; };
+		5218C9A52AB06BA600DEFFC5 /* UIColor+HexAndImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5218C9A42AB06BA600DEFFC5 /* UIColor+HexAndImage.swift */; };
 		5218C9A72AB06DE200DEFFC5 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 5218C9A62AB06DE200DEFFC5 /* README.md */; };
 		525CFC6D2AAFA1E100FE3E22 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 525CFC6C2AAFA1E100FE3E22 /* AppDelegate.swift */; };
 		525CFC6F2AAFA1E100FE3E22 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 525CFC6E2AAFA1E100FE3E22 /* SceneDelegate.swift */; };
@@ -67,7 +67,7 @@
 		5218C99D2AB068E400DEFFC5 /* Product.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Product.swift; sourceTree = "<group>"; };
 		5218C99F2AB0697A00DEFFC5 /* Deal.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Deal.swift; sourceTree = "<group>"; };
 		5218C9A12AB069CA00DEFFC5 /* FakeData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FakeData.swift; sourceTree = "<group>"; };
-		5218C9A42AB06BA600DEFFC5 /* UIColor+ HexAndImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+ HexAndImage.swift"; sourceTree = "<group>"; };
+		5218C9A42AB06BA600DEFFC5 /* UIColor+HexAndImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+HexAndImage.swift"; sourceTree = "<group>"; };
 		5218C9A62AB06DE200DEFFC5 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = SOURCE_ROOT; };
 		525CFC692AAFA1E100FE3E22 /* MallApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MallApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		525CFC6C2AAFA1E100FE3E22 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -131,7 +131,7 @@
 		5218C9A32AB06B7F00DEFFC5 /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
-				5218C9A42AB06BA600DEFFC5 /* UIColor+ HexAndImage.swift */,
+				5218C9A42AB06BA600DEFFC5 /* UIColor+HexAndImage.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -350,7 +350,7 @@
 				525CFC712AAFA1E100FE3E22 /* ViewController.swift in Sources */,
 				525CFC6D2AAFA1E100FE3E22 /* AppDelegate.swift in Sources */,
 				5218C99E2AB068E400DEFFC5 /* Product.swift in Sources */,
-				5218C9A52AB06BA600DEFFC5 /* UIColor+ HexAndImage.swift in Sources */,
+				5218C9A52AB06BA600DEFFC5 /* UIColor+HexAndImage.swift in Sources */,
 				5218C9A02AB0697A00DEFFC5 /* Deal.swift in Sources */,
 				525CFC6F2AAFA1E100FE3E22 /* SceneDelegate.swift in Sources */,
 				5218C99B2AB066BC00DEFFC5 /* R.generated.swift in Sources */,
