@@ -7,6 +7,13 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		520A1DBF2AB3849D0079FABA /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 520A1DBE2AB3849D0079FABA /* DetailViewController.swift */; };
+		520A1DC12AB387A70079FABA /* Tab.swift in Sources */ = {isa = PBXBuildFile; fileRef = 520A1DC02AB387A70079FABA /* Tab.swift */; };
+		520A1DC32AB394520079FABA /* CommonCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 520A1DC22AB394520079FABA /* CommonCell.swift */; };
+		520A1DC72AB396660079FABA /* DealListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 520A1DC62AB396660079FABA /* DealListViewController.swift */; };
+		520A1DC92AB396A40079FABA /* CommonList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 520A1DC82AB396A40079FABA /* CommonList.swift */; };
+		520A1DCB2AB39AB20079FABA /* DealListCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 520A1DCA2AB39AB20079FABA /* DealListCell.swift */; };
+		520A1DCD2AB39AD20079FABA /* CommonListCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 520A1DCC2AB39AD20079FABA /* CommonListCell.swift */; };
 		52101BF72AB2C13F006D2CB6 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52101BF62AB2C13F006D2CB6 /* HomeViewController.swift */; };
 		52101BF92AB2C15F006D2CB6 /* MoreViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52101BF82AB2C15F006D2CB6 /* MoreViewController.swift */; };
 		5218C9872AB065D600DEFFC5 /* home_selected@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 5218C9742AB065D600DEFFC5 /* home_selected@2x.png */; };
@@ -51,6 +58,13 @@
 /* Begin PBXFileReference section */
 		446ABE0A0D597A4C709E35C0 /* Pods_MallApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MallApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		45397D7E2753711DC0B1447C /* Pods-MallApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MallApp.debug.xcconfig"; path = "Target Support Files/Pods-MallApp/Pods-MallApp.debug.xcconfig"; sourceTree = "<group>"; };
+		520A1DBE2AB3849D0079FABA /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
+		520A1DC02AB387A70079FABA /* Tab.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tab.swift; sourceTree = "<group>"; };
+		520A1DC22AB394520079FABA /* CommonCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommonCell.swift; sourceTree = "<group>"; };
+		520A1DC62AB396660079FABA /* DealListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DealListViewController.swift; sourceTree = "<group>"; };
+		520A1DC82AB396A40079FABA /* CommonList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommonList.swift; sourceTree = "<group>"; };
+		520A1DCA2AB39AB20079FABA /* DealListCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DealListCell.swift; sourceTree = "<group>"; };
+		520A1DCC2AB39AD20079FABA /* CommonListCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommonListCell.swift; sourceTree = "<group>"; };
 		52101BF62AB2C13F006D2CB6 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		52101BF82AB2C15F006D2CB6 /* MoreViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoreViewController.swift; sourceTree = "<group>"; };
 		5218C9742AB065D600DEFFC5 /* home_selected@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "home_selected@2x.png"; sourceTree = "<group>"; };
@@ -190,6 +204,8 @@
 				525CFC6E2AAFA1E100FE3E22 /* SceneDelegate.swift */,
 				52101BF62AB2C13F006D2CB6 /* HomeViewController.swift */,
 				52101BF82AB2C15F006D2CB6 /* MoreViewController.swift */,
+				520A1DBE2AB3849D0079FABA /* DetailViewController.swift */,
+				520A1DC62AB396660079FABA /* DealListViewController.swift */,
 				525CFC702AAFA1E100FE3E22 /* ViewController.swift */,
 				525CFC722AAFA1E100FE3E22 /* Main.storyboard */,
 				525CFC752AAFA1E700FE3E22 /* Assets.xcassets */,
@@ -205,6 +221,11 @@
 			isa = PBXGroup;
 			children = (
 				52F29C182AB2CC16006FE8B5 /* BannerView.swift */,
+				520A1DC02AB387A70079FABA /* Tab.swift */,
+				520A1DC82AB396A40079FABA /* CommonList.swift */,
+				520A1DCA2AB39AB20079FABA /* DealListCell.swift */,
+				520A1DC22AB394520079FABA /* CommonCell.swift */,
+				520A1DCC2AB39AD20079FABA /* CommonListCell.swift */,
 				52F29C1A2AB2E7FE006FE8B5 /* ProductList.swift */,
 			);
 			path = Components;
@@ -384,7 +405,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				520A1DC92AB396A40079FABA /* CommonList.swift in Sources */,
 				52F29C192AB2CC17006FE8B5 /* BannerView.swift in Sources */,
+				520A1DC12AB387A70079FABA /* Tab.swift in Sources */,
+				520A1DC32AB394520079FABA /* CommonCell.swift in Sources */,
 				525CFC712AAFA1E100FE3E22 /* ViewController.swift in Sources */,
 				52101BF92AB2C15F006D2CB6 /* MoreViewController.swift in Sources */,
 				5218C9AE2AB0741E00DEFFC5 /* UIColor+AppColors.swift in Sources */,
@@ -395,10 +419,14 @@
 				5218C9A02AB0697A00DEFFC5 /* Deal.swift in Sources */,
 				5218C9A92AB070FF00DEFFC5 /* BaseViewController.swift in Sources */,
 				525CFC6F2AAFA1E100FE3E22 /* SceneDelegate.swift in Sources */,
+				520A1DCD2AB39AD20079FABA /* CommonListCell.swift in Sources */,
+				520A1DBF2AB3849D0079FABA /* DetailViewController.swift in Sources */,
 				5218C99B2AB066BC00DEFFC5 /* R.generated.swift in Sources */,
+				520A1DCB2AB39AB20079FABA /* DealListCell.swift in Sources */,
 				5218C9A22AB069CA00DEFFC5 /* FakeData.swift in Sources */,
 				5218C9B12AB0756D00DEFFC5 /* LoginViewController.swift in Sources */,
 				52101BF72AB2C13F006D2CB6 /* HomeViewController.swift in Sources */,
+				520A1DC72AB396660079FABA /* DealListViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

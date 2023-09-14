@@ -1,5 +1,5 @@
 //
-//  ProductList.swift
+//  File.swift
 //  MallApp
 //
 //  Created by zouminyi on 9/14/23.
@@ -8,38 +8,39 @@
 import UIKit
 import SnapKit
 
-class ProductCell: CommonListCell<Product>{
-    let priceLabel: UILabel
+class DealListCell: CommonListCell<Deal> {
+    
+    let progressLabel: UILabel
     let productImageView: UIImageView
        
-    override var item: Product? {
+    override var item: Deal? {
            didSet {
                if let p = self.item {
-                   self.productImageView.kf.setImage(with: URL(string: p.imageUrl))
-                   self.textLabel?.text = p.name
-                   self.detailTextLabel?.text = p.desc
-                   self.priceLabel.text = "￥\(p.price)"
+                self.productImageView.kf.setImage(with: URL(string: p.product.imageUrl))
+                self.textLabel?.text = p.product.name
+                self.detailTextLabel?.text = p.product.desc
+                self.progressLabel.text = "Learnt \(p.progress)%"
                }
            }
        }
        
     required init(style: UITableViewCell.CellStyle, reuseIdentifier: String?) {
-           priceLabel = UILabel(frame: .zero)
+           progressLabel = UILabel(frame: .zero)
            productImageView = UIImageView()
            super.init(style: style, reuseIdentifier: reuseIdentifier)
            self.setupViews()
        }
        
        private func setupViews() {
-           textLabel?.textColor = UIColor.primaryButtonStyle
+           textLabel?.textColor = UIColor.primaryGrey
            detailTextLabel?.textColor = UIColor.primaryGrey
            detailTextLabel?.numberOfLines = 2
-           priceLabel.textColor = UIColor.primaryLabelText
-           priceLabel.font = UIFont.systemFont(ofSize: 15)
+           progressLabel.textColor = UIColor.primaryGrey
+           progressLabel.font = UIFont.systemFont(ofSize: 15)
            productImageView.contentMode = .scaleAspectFill
            productImageView.clipsToBounds = true
            
-           contentView.addSubview(priceLabel)
+           contentView.addSubview(progressLabel)
            contentView.addSubview(productImageView)
            
            productImageView.snp.makeConstraints({ (make) in
@@ -55,7 +56,7 @@ class ProductCell: CommonListCell<Product>{
                make.right.equalTo(contentView).offset(-20)
            })
            
-           priceLabel.snp.makeConstraints { (make) in
+           progressLabel.snp.makeConstraints { (make) in
                make.left.equalTo(textLabel!)
                make.centerY.equalTo(contentView)
            }
@@ -70,5 +71,4 @@ class ProductCell: CommonListCell<Product>{
        required init?(coder: NSCoder) {
            fatalError("init(coder:) has not been implemented")
        }
-
 }
