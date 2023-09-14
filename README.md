@@ -30,3 +30,22 @@ Expansion: If your app grows to include themes or multiple color schemes, a sepa
 - Cons:
 Verbosity: It can be a bit more verbose: AppConstants.Colors.backgroundColor.
 Indirection: New developers might have to look up where AppConstants is defined to understand its structure and contents.
+
+
+### Reusable
+The <T: UIViewController> in func createCustomViewController<T: UIViewController> represents Swift's generic syntax. Generics allow code to be independent of specific types. Here, T is a type placeholder. The constraint T: UIViewController means T must be a type of UIViewController or its subclass. This design lets the function createCustomViewController be flexible, capable of creating instances for any UIViewController subclass. Using generics, one can handle multiple UIViewController subclasses with a single function, eliminating the need for separate functions for each subclass.
+
+```
+    func createViewController<T: UIViewController>(ofType: T.Type, image: UIImage?, selectedImage: UIImage?, title: String) -> T {
+        let vc = T() //或者其他特定的VC
+        vc.tabBarItem.image = image
+        vc.tabBarItem.selectedImage = selectedImage
+        vc.tabBarItem.title = title
+        return vc
+    }
+```
+
+### protocols
+#### You need to add weak if you want to use protocol object and don't forget add Anyobject for this protocol so that it becomes a class type.
+
+
