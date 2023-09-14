@@ -7,28 +7,42 @@
 
 import UIKit
 
-class ViewController: UIViewController {
+class ViewController: UITabBarController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        let loginButton = UIButton(type: .custom)
+//        let loginButton = UIButton(type: .custom)
         
-        loginButton.setTitle("Login", for: .normal)
-        loginButton.backgroundColor = .primaryButtonStyle
-        loginButton.setTitleColor(.black, for: .normal)
-        loginButton.addTarget(self, action: #selector(login), for: .touchUpInside)
-
-        view.addSubview(loginButton)
+        setupViewControllers()
+        self.view.backgroundColor = .primaryBackground
         
-        loginButton.snp.makeConstraints { make in
-            make.left.top.equalTo(100)
-            make.width.equalTo(100)
-        }
+//        let homeVC = HomeViewController()
+//        homeVC.tabBarItem.image = R.image.home()
+//        homeVC.tabBarItem.selectedImage = R.image.home_selected()
+//        homeVC.tabBarItem.title = "Home"
+//
+//        let navigationHomeVC = UINavigationController(rootViewController: homeVC)
+//        self.addChild(navigationHomeVC)
     }
 
-    @objc private func login() {
-        let loginVC = LoginViewController()
-        navigationController?.pushViewController(loginVC, animated: true)
+    func setupViewControllers() {
+        let homeVC = createViewController(ofType: HomeViewController.self, image: R.image.home(), selectedImage: R.image.home_selected(), title: "Home")
+        let navigationHomeVC = UINavigationController(rootViewController: homeVC)
+        addChild(navigationHomeVC)
+        
+         let moreVC = createViewController(ofType: MoreViewController.self, image: R.image.mine(), selectedImage: R.image.mine_selected(), title: "More")
+         let navigationMoreVC = UINavigationController(rootViewController: moreVC)
+         addChild(navigationMoreVC)
+        
+    }
+
+    func createViewController<T: UIViewController>(ofType: T.Type, image: UIImage?, selectedImage: UIImage?, title: String) -> T {
+        let vc = T() //或者其他特定的VC
+        vc.tabBarItem.image = image
+        vc.tabBarItem.selectedImage = selectedImage?.withRenderingMode(.alwaysOriginal)
+        vc.tabBarItem.setTitleTextAttributes([.foregroundColor: UIColor.primaryNavigationBarText], for: .selected)
+        vc.tabBarItem.title = title
+        return vc
     }
 
 }
